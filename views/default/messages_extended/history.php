@@ -23,7 +23,7 @@
             'JOIN ' . $CONFIG->dbprefix . 'objects_entity oe ON oe.guid = e.guid'
         ),
         'wheres' => array(
-            'oe.title LIKE "%' . $title . '"'
+            'oe.title LIKE "%' . sanitise_string($title) . '"'
         ),
         'full_view' => false,
     ));
