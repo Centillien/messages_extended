@@ -10,6 +10,7 @@ $search_pattern = get_input('search_pattern');
 $removalEntities = new ElggBatch('elgg_get_entities', array(
     'type' => 'object',
     'subtype' => 'messages',
+    'limit' => 0,
     'joins' => array(
         'JOIN ' . $CONFIG->dbprefix . 'objects_entity oe ON oe.guid = e.guid'
     ),
