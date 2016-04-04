@@ -1,3 +1,3 @@
-.messages_extened-history {
+.messages_extended-history {
     margin-top: 10px;
 }

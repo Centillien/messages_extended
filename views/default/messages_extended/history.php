@@ -1,4 +1,4 @@
-<div class="messages_extened-history">
+<div class="messages_extended-history">
     <h3><?= elgg_echo('messages_extended:history:title'); ?></h3>
     <hr/>
     <?php
