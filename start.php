@@ -11,7 +11,12 @@ elgg_register_event_handler('init', 'system', 'messages_extended_init');
  */
 function messages_extended_init() {
 	elgg_extend_view('css/elgg', 'messages_extended/css');
+
 	elgg_register_plugin_hook_handler('output:before', 'layout', 'messages_extended_view');
+
+	elgg_register_admin_menu_item('administer', 'clear_messages', 'administer_utilities');
+
+	elgg_register_action('messages_extended/clear_messages', __DIR__ . '/actions/messages_extended/clear_messages.php');
 }
 
 function messages_extended_view($hook, $type, $return, $params) {
