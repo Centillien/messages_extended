@@ -4,6 +4,8 @@ global $CONFIG;
 
 admin_gatekeeper();
 
+ini_set('max_execution_time', 60*60);
+
 $search_pattern = get_input('search_pattern');
 
 /* @var ElggEntity[] $removalEntities */
